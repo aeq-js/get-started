@@ -1,6 +1,4 @@
-#Lets begin
-
-Every vue app takes beginning from one starting point, in most cases it is main{.ts,.js}
+# Lets begin
 
 This article will show some tools ant tricks to work with vue more comfortable and fast.
 
@@ -9,17 +7,13 @@ In context of current article we will:
 2. Use DI container for services and state management
 3. Know how to reuse common code in our projects
 
+## Just reuse it!
 
-
-Lets start from the last...
-
-## 5. Just reuse it!
-
-#####Problem:
+##### Problem:
 There are many common tasks per every project we do all the times and just copy/past with refactoring from prev project.
 Those parts are too domain related to be moved to package but still very common.
 
-#####Example:
+##### Example:
 Lets look on most common case - Auth.
 Very common for all projects but at same time very domain related.
 
@@ -39,7 +33,7 @@ export class Auth {
 Those parts could not be published to npm or moved to separate repo. 
 
 
-#####Solution:
+##### Solution:
 So here come our hero: `Dependency Injection` (DI) and `inversion of control` (IoC).
 
 Lets replace  `UserRepo`, `Storage`, `Logger`, `User` classes to  interfaces
