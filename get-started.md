@@ -3,7 +3,7 @@
 This article will show some tools ant tricks to work with vue more comfortable and fast.
 
 In context of current article we will:
-1. Get rid from global storage. `Goodbye Vuex`. Dont panic and skip this article, just watch till the end :)
+1. Get rid from global storage. `Goodbye Vuex`. Dont panic and do not skip this article, just watch till the end :)
 2. Use DI container for services and state management
 3. Know how to reuse common code in our projects
 
